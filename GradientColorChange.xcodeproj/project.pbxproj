@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		BCC52D0B29CDD756005BE177 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC52D0A29CDD756005BE177 /* AppDelegate.swift */; };
 		BCC52D0D29CDD756005BE177 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC52D0C29CDD756005BE177 /* SceneDelegate.swift */; };
-		BCC52D0F29CDD756005BE177 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC52D0E29CDD756005BE177 /* ViewController.swift */; };
+		BCC52D0F29CDD756005BE177 /* GradientColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC52D0E29CDD756005BE177 /* GradientColorViewController.swift */; };
 		BCC52D1229CDD756005BE177 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC52D1029CDD756005BE177 /* Main.storyboard */; };
 		BCC52D1429CDD757005BE177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC52D1329CDD757005BE177 /* Assets.xcassets */; };
 		BCC52D1729CDD757005BE177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC52D1529CDD757005BE177 /* LaunchScreen.storyboard */; };
+		BCC52D1F29D039FD005BE177 /* ColorChangeViewControllerII.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC52D1E29D039FD005BE177 /* ColorChangeViewControllerII.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BCC52D0729CDD756005BE177 /* GradientColorChange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GradientColorChange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCC52D0A29CDD756005BE177 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCC52D0C29CDD756005BE177 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BCC52D0E29CDD756005BE177 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCC52D0E29CDD756005BE177 /* GradientColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientColorViewController.swift; sourceTree = "<group>"; };
 		BCC52D1129CDD756005BE177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCC52D1329CDD757005BE177 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCC52D1629CDD757005BE177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCC52D1829CDD757005BE177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC52D1E29D039FD005BE177 /* ColorChangeViewControllerII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorChangeViewControllerII.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				BCC52D0A29CDD756005BE177 /* AppDelegate.swift */,
 				BCC52D0C29CDD756005BE177 /* SceneDelegate.swift */,
-				BCC52D0E29CDD756005BE177 /* ViewController.swift */,
+				BCC52D1E29D039FD005BE177 /* ColorChangeViewControllerII.swift */,
+				BCC52D0E29CDD756005BE177 /* GradientColorViewController.swift */,
 				BCC52D1029CDD756005BE177 /* Main.storyboard */,
 				BCC52D1329CDD757005BE177 /* Assets.xcassets */,
 				BCC52D1529CDD757005BE177 /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCC52D0F29CDD756005BE177 /* ViewController.swift in Sources */,
+				BCC52D1F29D039FD005BE177 /* ColorChangeViewControllerII.swift in Sources */,
+				BCC52D0F29CDD756005BE177 /* GradientColorViewController.swift in Sources */,
 				BCC52D0B29CDD756005BE177 /* AppDelegate.swift in Sources */,
 				BCC52D0D29CDD756005BE177 /* SceneDelegate.swift in Sources */,
 			);
@@ -216,7 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -295,6 +299,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +328,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
