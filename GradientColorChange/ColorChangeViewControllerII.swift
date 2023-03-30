@@ -21,20 +21,21 @@ class ColorChangeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        redColor.value = Float(CGFloat(0))
-        greenColor.value = Float(CGFloat(0))
-        blueColor.value = Float(CGFloat(0))
-        alphaColor.value = Float(0.5)
-        redLabel.text = String(Int(redColor.value*255))
-        greenLabel.text = String(Int(greenColor.value*255))
-        blueLabel.text = String(Int(blueColor.value*255))
-        alphaLable.text = String (format: "%.2f", alphaColor.value)
+        redColor.value = 0
+        greenColor.value = 0
+        blueColor.value = 0
+        alphaColor.value = 0.5
+        
+        updateColor()
         // Do any additional setup after loading the view.
     }
     
-    func reflashValue () {
-        
-        colorImageView.backgroundColor = UIColor(red: CGFloat(redColor.value), green: CGFloat(greenColor.value), blue: CGFloat(blueColor.value), alpha: CGFloat(alphaColor.value))
+    func updateColor () {
+        let red = CGFloat(redColor.value)
+        let green = CGFloat(greenColor.value)
+        let blue = CGFloat(blueColor.value)
+        let alpha = CGFloat(alphaColor.value)
+        colorImageView.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: alpha)
         redLabel.text = String(Int(redColor.value*255))
         greenLabel.text = String(Int(greenColor.value*255))
         blueLabel.text = String(Int(blueColor.value*255))
@@ -42,11 +43,8 @@ class ColorChangeViewController: UIViewController {
     }
         
     @IBAction func changeColor(_ sender: Any) {
-        
-        
-        reflashValue()
+        updateColor()
     }
-    
 
     /*
     // MARK: - Navigation
